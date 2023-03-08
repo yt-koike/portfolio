@@ -68,7 +68,6 @@
                                 <td>設計・実装・テストの全て</td>
                             </tr>
                         </table>
-
                         背景/工夫した点/苦労した点： オブジェクト認識技術を Web
                         上で体験できるようにしたかったことがきっかけです。工夫点はオンライン上に公開する上で最低限のセキュリティ対策を施した点です。例えば通信盗聴の防止、コマンドインジェクション対策、データ流出防止対策、過度なアクセス数の対策などを施しました。苦労した点は
                         AWS の使い方を学ぶ必要があったことです。
@@ -76,7 +75,6 @@
                         得たこと: Web システムの知識を学びました。
                         <br />
                         公開: 構築手順を近々公開予定
-
                     </div>
                 </div>
             </div>
@@ -95,6 +93,93 @@
                 </div>
             </div>
 
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        3D ポリゴンレンダラー
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                    <div class="accordion-body">
+                        概要： 3D ポリゴンを陰影付きで描画するソフトウェア
+                        <br>
+                        関連技術: <span class="badge rounded-pill bg-dark">レイトレーシング</span>
+                        <span class="badge rounded-pill bg-dark">C++</span>
+                        <span class="badge rounded-pill bg-dark">GPU によるハードウェア支援</span>
+                        <br>
+                        期間： 2022/04~2020/08
+                        <br>
+                        人数： 1 人
+                        <br>
+                        担当： 設計・実装・テストの全て
+                        <br>
+                        背景/工夫した点/苦労した点：
+                        <br>
+                        大学の個人プロジェクトを背景に作成しました。工夫した点は3DオブジェクトデータをSTLファイルから読み込めるようにしたことです。苦労した点は3Dオブジェクトデータを高速に扱うデータ構造(kD木)を
+                        C++ で実装したことです。
+                        <br>
+                        得たこと: 3DCGの知識、ハードウェア支援の実装方法と効果を学びました。
+                        <br>
+                        公開: ソースコードを GitHub 上(https://github.com/yt-koike/3D_Renderer)にて公開
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        迷路ゲームとマインスイーパー
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                    <div class="accordion-body">
+                        概要: Pygame ライブラリでゲームを 2 つ開発しました。
+                        <br>
+                        関連技術:
+                        <span class="badge rounded-pill bg-dark">Python</span>
+                        <span class="badge rounded-pill bg-dark">Pygame</span>
+                        <br>
+                        期間: 2020/09~2021/01
+                        <br>
+                        人数: 1 人
+                        <br>
+                        担当: 設計・実装・テストの全て
+                        <br>
+                        背景/工夫した点/苦労した点:
+                        大学の Python 授業で出された課題のために開発しました。工夫点はロジックと描画機能を分離して実装したことで、Pygame
+                        以外のライブラリへの移植性を高めたことです。苦労した点はプログラムを読みやすいものにするために、クラスや関数を設計したことです。
+                        <br>
+                        得たこと: Python の使い方と読みやすいプログラムの書き方を学びました。加えて直接的な関係は不明ですがが、成果物としてバンダイナムコに提出したところ、インターンシップ選考に合格しました。
+                        <br>
+                        公開: ソースコードを GitHub 上にて公開している。迷路ゲーム: https://github.com/yt-koike/PyMaze, マインスイーパー:
+                        https://github.com/yt-koike/PyMineSweeper
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h4>その他</h4>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    大学の MATLAB 授業にて光学式文字認識プログラムやモールス信号解読(音声->文字)プログラムを開発
+                </li>
+                <li class="list-group-item">
+                    12 歳のときにホットスーププロセッサ(HSP)というプログラミング言語で画像編集ソフトを開発
+                </li>
+                <li class="list-group-item">
+                    ノート PC の故障によるデータ消失を受けて、自宅ファイルサーバを RaspberryPi + 外部 HDD で構築
+                </li>
+                <li class="list-group-item">
+                    無線機能付きマイクロチップ(ESP32)にソフトウェアを組み込み、 Wi-Fi 経由で LED を操作できるようにした
+                </li>
+                <li class="list-group-item">
+                    ModelSim を使ってパイプラインCPU を設計し動作シミュレーションをした
+                </li>
+                <li class="list-group-item">
+                    デスクトップパソコンを部品から組み立て
+                </li>
+            </ul>
             <hr />
 
             <h2>外部リンク</h2>
