@@ -2,75 +2,193 @@
 <html lang="jp">
 
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="main.css">
+    <meta charset="utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="main.css" />
     <title>Portfolio</title>
 </head>
 
 <body>
-    <div id="name">Yutaro Koike</div>
-    <hr>
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <span class="align-items-center display-4">Koike Yutaro</span>
+    </header>
+    <div class="container">
+        <h2>保有資格</h2>
+        <ul class="list-group">
+            <li class="list-group-item">TOEIC 915 点</li>
+            <li class="list-group-item">普通自動車第一種運転免許</li>
+            <li class="list-group-item">CG エンジニア検定 エキスパート</li>
+            <li class="list-group-item">剣道二段</li>
+        </ul>
+        <hr />
 
-    <h2>保有資格</h2>
+        <h2>学業</h2>
 
-    <ul>
-        <li>TOEIC 915 点</li>
-        <li>普通自動車第一種運転免許</li>
-        <li>CG エンジニア検定 エキスパート</li>
-        <li>剣道二段</li>
-    </ul>
-    <hr>
+        大学の成績は学部でもトップクラスであり、大学 3 年春時点での累積 GPA は 3.55
+        以上です。特にプログラミングの授業は全て S 評価を取得しました。
 
-    <h2>学業</h2>
+        <hr />
+        <h2>成果物</h2>
+        <div class="accordion" id="artifacts">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        オブジェクト認識サイト
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                    <div class="accordion-body">
+                        概要：
+                        画像をアップロードするとそれに写っているオブジェクトを認識してくれるサイト
+                        <table border="1">
+                            <tr>
+                                <th>項目</th>
+                                <th>内容</th>
+                            </tr>
+                            <tr>
+                                <td>関連技術</td>
+                                <td>
+                                    <span class="badge rounded-pill bg-dark">Apache HTTP Server</span>
+                                    <span class="badge rounded-pill bg-dark">PHP</span>
+                                    <span class="badge rounded-pill bg-dark">Yolov3</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>期間</td>
+                                <td>2020/07~2020/08</td>
+                            </tr>
+                            <tr>
+                                <td>人数</td>
+                                <td>1 人</td>
+                            </tr>
+                            <tr>
+                                <td>担当</td>
+                                <td>設計・実装・テストの全て</td>
+                            </tr>
+                        </table>
+                        背景/工夫した点/苦労した点： オブジェクト認識技術を Web
+                        上で体験できるようにしたかったことがきっかけです。工夫点はオンライン上に公開する上で最低限のセキュリティ対策を施した点です。例えば通信盗聴の防止、コマンドインジェクション対策、データ流出防止対策、過度なアクセス数の対策などを施しました。苦労した点は
+                        AWS の使い方を学ぶ必要があったことです。
+                        <br />
+                        得たこと: Web システムの知識を学びました。
+                        <br />
+                        公開: 構築手順を近々公開予定
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Web ポートフォリオ
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                    <div class="accordion-body">
+                        現在工事中!<a href="https://getbootstrap.jp/">Bootstrap</a> を使って作成しています。
+                        リンクは<a href="https://yt-koike.github.io/portfolio/">こちら</a>
+                    </div>
+                </div>
+            </div>
 
-    大学の成績は学部でもトップクラスであり、大学 3 年春時点での累積 GPA は 3.55 以上です。特にプログラミングの授業は全て S 評価を取得しました。
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        3D ポリゴンレンダラー
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                    <div class="accordion-body">
+                        概要： 3D ポリゴンを陰影付きで描画するソフトウェア
+                        <br>
+                        関連技術: <span class="badge rounded-pill bg-dark">レイトレーシング</span>
+                        <span class="badge rounded-pill bg-dark">C++</span>
+                        <span class="badge rounded-pill bg-dark">GPU によるハードウェア支援</span>
+                        <br>
+                        期間： 2022/04~2020/08
+                        <br>
+                        人数： 1 人
+                        <br>
+                        担当： 設計・実装・テストの全て
+                        <br>
+                        背景/工夫した点/苦労した点：
+                        <br>
+                        大学の個人プロジェクトを背景に作成しました。工夫した点は3DオブジェクトデータをSTLファイルから読み込めるようにしたことです。苦労した点は3Dオブジェクトデータを高速に扱うデータ構造(kD木)を
+                        C++ で実装したことです。
+                        <br>
+                        得たこと: 3DCGの知識、ハードウェア支援の実装方法と効果を学びました。
+                        <br>
+                        公開: ソースコードを GitHub 上(https://github.com/yt-koike/3D_Renderer)にて公開
+                    </div>
+                </div>
+            </div>
 
-    <hr>
-    <h2>成果物</h2>
-    <h3>ポートフォリオ</h3>
-    現在工事中!
-    リンクは<a href="https://yt-koike.github.io/portfolio/">こちら</a>
-    <h3>オブジェクト認識サイト</h3>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        迷路ゲームとマインスイーパー
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                    <div class="accordion-body">
+                        概要: Pygame ライブラリでゲームを 2 つ開発しました。
+                        <br>
+                        関連技術:
+                        <span class="badge rounded-pill bg-dark">Python</span>
+                        <span class="badge rounded-pill bg-dark">Pygame</span>
+                        <br>
+                        期間: 2020/09~2021/01
+                        <br>
+                        人数: 1 人
+                        <br>
+                        担当: 設計・実装・テストの全て
+                        <br>
+                        背景/工夫した点/苦労した点:
+                        大学の Python 授業で出された課題のために開発しました。工夫点はロジックと描画機能を分離して実装したことで、Pygame
+                        以外のライブラリへの移植性を高めたことです。苦労した点はプログラムを読みやすいものにするために、クラスや関数を設計したことです。
+                        <br>
+                        得たこと: Python の使い方と読みやすいプログラムの書き方を学びました。加えて直接的な関係は不明ですがが、成果物としてバンダイナムコに提出したところ、インターンシップ選考に合格しました。
+                        <br>
+                        公開: ソースコードを GitHub 上にて公開している。迷路ゲーム: https://github.com/yt-koike/PyMaze, マインスイーパー:
+                        https://github.com/yt-koike/PyMineSweeper
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h4>その他</h4>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    大学の MATLAB 授業にて光学式文字認識プログラムやモールス信号解読(音声->文字)プログラムを開発
+                </li>
+                <li class="list-group-item">
+                    12 歳のときにホットスーププロセッサ(HSP)というプログラミング言語で画像編集ソフトを開発
+                </li>
+                <li class="list-group-item">
+                    ノート PC の故障によるデータ消失を受けて、自宅ファイルサーバを RaspberryPi + 外部 HDD で構築
+                </li>
+                <li class="list-group-item">
+                    無線機能付きマイクロチップ(ESP32)にソフトウェアを組み込み、 Wi-Fi 経由で LED を操作できるようにした
+                </li>
+                <li class="list-group-item">
+                    ModelSim を使ってパイプラインCPU を設計し動作シミュレーションをした
+                </li>
+                <li class="list-group-item">
+                    デスクトップパソコンを部品から組み立て
+                </li>
+            </ul>
+            <hr />
 
-    概要： 画像をアップロードするとそれに写っているオブジェクトを認識してくれるサイト
-    <table border="1">
-        <tr>
-            <th>項目</th>
-            <th>内容</th>
-        </tr>
-        <tr>
-            <td>関連技術</td>
-            <td>Apache HTTP Server, PHP, YOLOv3</td>
-        </tr>
-        <tr>
-            <td> 期間</td>
-            <td>2020/07~2020/08</td>
-        </tr>
-        <tr>
-            <td>人数</td>
-            <td>1 人</td>
-        </tr>
-        <tr>
-            <td>担当</td>
-            <td>設計・実装・テストの全て</td>
-        </tr>
-    </table>
+            <h2>外部リンク</h2>
+            <a href="https://github.com/yt-koike"> GitHub </a>
+        </div>
 
-    背景/工夫した点/苦労した点：
-    オブジェクト認識技術を Web
-    上で体験できるようにしたかったことがきっかけです。工夫点はオンライン上に公開する上で最低限のセキュリティ対策を施した点です。例えば通信盗聴の防止、コマンドインジェクション対策、データ流出防止対策、過度なアクセス数の対策などを施しました。苦労した点は
-    AWS の使い方を学ぶ必要があったことです。
-    <br>
-    得たこと: Web システムの知識を学びました。
-    <br>
-    公開: 構築手順を近々公開予定
-
-    <hr>
-
-    <h2>外部リンク</h2>
-    <a href="https://github.com/yt-koike">
-        GitHub
-    </a>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
