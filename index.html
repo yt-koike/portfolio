@@ -86,6 +86,105 @@
           <a href="documents/thesis_presentation.pptx">卒業論文発表資料</a>
         </li>
       </ul>
+
+      研究では NeRF という 3D 技術を使いました。以下の画像をクリックすると Web
+      ブラウザ上で NeRF サンプルを見ることができます。(Developed by
+      <a href="https://mobile-nerf.github.io/">Zhiqin Chen et al.</a>)
+
+      <div class="d-flex align-items-center justify-content-center">
+        <div style="width: 400px">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel carousel-dark slide text-center"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+                onclick=""
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a
+                  href="https://storage.googleapis.com/jax3d-public/projects/mobilenerf/mobilenerf_viewer_mac/zdeferred_syn_mac_faster.html?obj=chair"
+                >
+                  <img
+                    src="https://mobile-nerf.github.io/image/preview_chair.jpg"
+                    class="d-block w-100 border border-2"
+                    style="margin: auto"
+                  />
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a
+                  href="https://storage.googleapis.com/jax3d-public/projects/mobilenerf/mobilenerf_viewer_mac/zdeferred_syn_mac_faster.html?obj=ship"
+                >
+                  <img
+                    src="https://mobile-nerf.github.io/image/preview_ship.jpg"
+                    class="d-block w-100 border border-2"
+                    alt="..."
+                    style="margin: auto"
+                  />
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a
+                  href="https://storage.googleapis.com/jax3d-public/projects/mobilenerf/mobilenerf_viewer_mac/zdeferred_syn_mac_forward.html?obj=materials"
+                >
+                  <img
+                    src="https://mobile-nerf.github.io/image/preview_materials.jpg"
+                    class="d-block w-100 border border-2"
+                    alt="..."
+                    style="margin: auto"
+                  />
+                </a>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
       <hr />
 
       <h2>取り組み略歴</h2>
@@ -151,6 +250,36 @@
             <div class="card-body">
               <h5 class="card-title">マインスイーパー</h5>
               <a href="#heading-pygames" class="btn btn-primary">詳細</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <img src="./prefecture.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">都道府県人口表示サイト</h5>
+              <a href="#heading-prefecture" class="btn btn-primary">詳細</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <img src="./lenticular.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">レンチキュラー表示・編集サイト</h5>
+              <a href="#heading-lenticular" class="btn btn-primary">詳細</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <img src="./portfolio.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Web ポートフォリオ</h5>
+              <a href="#heading-webportfolio" class="btn btn-primary">詳細</a>
             </div>
           </div>
         </div>
@@ -342,6 +471,111 @@
             </div>
           </div>
         </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading-prefecture">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFive"
+              aria-expanded="false"
+              aria-controls="collapseFive"
+            >
+              都道府県人口表示サイト
+            </button>
+          </h2>
+          <div
+            id="collapseFive"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading-pygames"
+          >
+            <div class="accordion-body">
+              概要: RESAS API
+              のキーを入力すると都道府県人口の推移グラフを表示します。
+              <br />
+              関連技術:
+              <span class="badge rounded-pill bg-dark">React</span>
+              <span class="badge rounded-pill bg-dark">Next.js</span>
+              <br />
+              期間: 2024/05/27~2024/06/04
+              <br />
+              人数: 1 人
+              <br />
+              担当: 設計・実装の全て
+              <br />
+              背景/工夫した点/苦労した点:
+              株式会社ゆめみ様のコーディングテストの一環で作成しました。
+              工夫点は API Key
+              をサーバー側に保存せず、利用の旅入力してもらうことでサーバー側での
+              Key 流出リスクを低減したことです。
+              苦労した点はプログラムを読みやすいものにするために、クラスや関数を設計したことです。
+              <br />
+              得たこと: Next.js を通じて React の仕組みや TypeScript など Web
+              フロントエンドの基礎的な知識を学びました。
+              <br />
+              公開: ソースコードを GitHub 上にて公開しています。<a
+                href="https://github.com/yt-koike/YumemiFE2024/tree/main"
+                >ソースコード</a
+              >,
+              <a href="https://yt-koike.github.io/YumemiFE2024/"
+                >実際のサイト</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading-lenticular">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSix"
+              aria-expanded="false"
+              aria-controls="collapseSix"
+            >
+              レンチキュラー表示・編集サイト
+            </button>
+          </h2>
+          <div
+            id="collapseSix"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading-pygames"
+          >
+            <div class="accordion-body">
+              概要: レンチキュラー用の画像を PC や
+              スマホ上で表示・編集できます。
+              <br />
+              関連技術:
+              <span class="badge rounded-pill bg-dark">React</span>
+              <span class="badge rounded-pill bg-dark">Next.js</span>
+              <br />
+              期間: 2024/11
+              <br />
+              人数: 1 人
+              <br />
+              担当: 設計・実装の全て
+              <br />
+              背景/工夫した点/苦労した点: 先輩を手助けする一環で作成しました。
+              工夫点は iPhone や Android、 PC
+              上でも同じ動作をさせるため、ネイティブアプリではなく Web
+              アプリを作成するようにしたことです。またいくら拡大しても品質劣化しない
+              SVG 形式を採用したことも工夫店の一つです。
+              苦労した点はスマホでの編集を可能にするためにタッチに対応させたことです。
+              <br />
+              得たこと: Next.js を通じて React の仕組みや TypeScript など Web
+              フロントエンドの基礎的な知識を学びました。
+              <br />
+              公開: ソースコードを GitHub 上にて公開しています。<a
+                href="https://github.com/yt-koike/lentimorpho_web"
+                >ソースコード</a
+              >,
+              <a href="https://yt-koike.github.io/lentimorpho_web/"
+                >実際のサイト</a
+              >
+            </div>
+          </div>
+        </div>
         <br />
         <h4>その他</h4>
         <ul class="list-group">
@@ -392,8 +626,15 @@
         </ul>
         <hr />
         <h2>外部リンク</h2>
-        <a href="https://github.com/yt-koike"> GitHub </a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSct7CH5CFg0FmUvRUkt8srFnAyQ0kxXXxN3AQqLW8yneMh0zQ/viewform?usp=sf_link"> Contact Form </a>
+        <a href="https://github.com/yt-koike">
+          <img src="github-mark.svg" width="30px" height="30px" />
+        </a>
+        <br />
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSct7CH5CFg0FmUvRUkt8srFnAyQ0kxXXxN3AQqLW8yneMh0zQ/viewform?usp=sf_link"
+        >
+          Contact Form
+        </a>
       </div>
     </div>
     <footer
@@ -406,7 +647,7 @@
       "
     >
       <div class="container">
-        <p class="text-muted">最終更新日: 2024/11/23</p>
+        <p class="text-muted">最終更新日: 2024/11/28</p>
       </div>
     </footer>
     <script
