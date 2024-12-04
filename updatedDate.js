@@ -12,8 +12,8 @@ xhttp.onreadystatechange = function () {
         var month = lastUpdated.getUTCMonth() + 1;
         var year = lastUpdated.getUTCFullYear();
         document.getElementById(
-          "#updated"
-        ).textContent = `Last updated: ${year}-${month}-${day}`;
+          "#lastUpdatedDate"
+        ).innerHTML = `${year}-${month}-${day}`;
       }
     });
   }
