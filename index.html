@@ -21,13 +21,29 @@
 </head>
 
 <body>
+  <script>
+    switch (navigator.language.substring(0, 2)) {
+      case "ja":
+        location.href = "ja.html";
+        break;
+      case "en":
+        location.href = "en.html";
+        break;
+      case "zh":
+        location.href = "zh-ch.html";
+        break;
+      default:
+    }
+  </script>
+
   <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
     <span class="align-items-center display-4">Koike Yutaro
       <br>
+      <h2>Sorry, your prefered language is not supported.<br>Please select one below.</h2>
       <select class="form-select form-select-lg mb-3" size="4" aria-label="Select Language" id="#languageSelect"
         onchange="location.href = this.value">
         <option value="index.html" selected>Select Your Language</option>
-        <option value="jp.html">日本語</option>
+        <option value="ja.html">日本語</option>
         <option value="en.html">English</option>
         <option value="zh-ch.html">中文</option>
       </select>
